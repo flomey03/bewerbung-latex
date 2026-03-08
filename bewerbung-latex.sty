@@ -323,7 +323,7 @@
         }%
     }{%
         \ifthenelse{\equal{\DefSprache}{British} \OR \equal{\DefSprache}{American}}{%
-            \ifthenelse{\equal{#1}{Mr} \OR \equal{#1}{Mrs} \OR \equal{#1}{Ms}}{%
+            \ifthenelse{\equal{#1}{Mr} \OR \equal{#1}{Mrs} \OR \equal{#1}{Ms} \OR \equal{#1}{}}{%
                 \ifthenelse{\equal{\DefAdressatTitel}{}}{%
                     \ifthenelse{\equal{\DefSprache}{British}}{%
                         \renewcommand*{\DefAnredeKopf}{#1}%
